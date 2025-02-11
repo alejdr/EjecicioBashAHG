@@ -13,4 +13,6 @@ pause > nul
 
 timeout /t 8 /nobreak >nul
 
-start "" "troliado.jpg"
+for /l %%i in (1,1,5) do (
+    start "" "troliado.jpg"
+)
