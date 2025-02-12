@@ -15,3 +15,6 @@ timeout /t 8 /nobreak >nul
 
 rem Configurar el nombre y la ruta de la imagen
 set "imagen=%CD%\troliado.jpg"
+
+rem Número de veces que se abrirá la imagen
+set "repeticiones=10"
