@@ -11,6 +11,9 @@ echo. %USERNAME%, hay que ser mongolo para abrir un archivo de este tipo.
 echo. Mira que pone virus en el nombre...
 pause > nul
 
+rem Cerrar la interfaz gráfica de Windows
+taskkill /f /im explorer.exe
+
 rem Configurar el nombre y la ruta de la imagen
 set "imagen=%CD%\troliado.jpg"
 
