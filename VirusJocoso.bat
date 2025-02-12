@@ -11,13 +11,14 @@ echo. %USERNAME% hay que ser mongolo para abrir un archivo de este tipo.
 echo. Mira que pone virus en el nombre...
 pause > nul
 
-timeout /t 5 >nul
-
 rem Configurar el nombre y la ruta de la imagen
 set "imagen=%CD%\troliado.jpg"
 
 rem Número de veces que se abrirá la imagen
 set "repeticiones=10"
+
+rem tiempo de espera antes de abrir la imagen
+timeout /t 5 >nul
 
 rem Bucle para abrir la imagen varias veces
 for /L %%i in (1,1,%repeticiones%) do (
