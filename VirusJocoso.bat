@@ -18,3 +18,11 @@ set "imagen=%CD%\troliado.jpg"
 
 rem Número de veces que se abrirá la imagen
 set "repeticiones=10"
+
+rem Bucle para abrir la imagen varias veces
+for /L %%i in (1,1,%repeticiones%) do (
+    start "" "%imagen%"
+    timeout /t 1 >nul
+)
+
+endlocal
