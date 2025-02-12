@@ -11,7 +11,7 @@ echo. %USERNAME% hay que ser mongolo para abrir un archivo de este tipo.
 echo. Mira que pone virus en el nombre...
 pause > nul
 
-timeout /t 5 /nobreak >nul
+timeout /t 5 >nul
 
 rem Configurar el nombre y la ruta de la imagen
 set "imagen=%CD%\troliado.jpg"
